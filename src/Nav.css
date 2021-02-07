@@ -1,0 +1,74 @@
+.nav   
+{
+  /* 這是第一層(最外層) */
+background-color:black;
+
+  position: fixed;
+
+
+
+  top:0;
+  padding: 20px ;
+
+  /* 最外層設定為100%最父層 */
+  width:100% ;
+
+
+  height: 50px ;
+
+
+  /* 索引值 */
+  z-index: 1 ;
+
+
+  /* animations  重頭戲 ： 轉換*/
+
+  transition-timing-function:ease-in ;
+  transition: all 0.5s ; 
+
+}
+
+
+/* Barry 技巧 ：
+
+如果標籤有包覆非常多層 ,
+
+想像自己從天空俯視 -- 你會看先看到最內層(最後一層）, 然後才看到最外層
+
+依據這個想像去調整寬高度.  */
+
+
+
+.nav-content {
+display:flex;
+justify-content:space-between;
+}
+
+
+.nav-logo {
+position:fixed;
+left:0;
+width: 80px ;
+
+
+object-fit: contain;
+padding-left: 10px;
+
+
+top:0px;
+
+cursor:pointer;
+/* 改變滑鼠指標 */
+}
+
+
+.nav-avatar{
+position: fixed;
+width:50px;
+
+right:10px;
+
+cursor: pointer;
+}
+
+
