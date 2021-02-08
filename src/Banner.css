@@ -1,7 +1,18 @@
 .banner {
   position: relative;
   height: 500px;
-
-
+  /* width: 400px; */
   object-fit: contain;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+
+.banner-content {
+  margin-left:20px ;
+  /* margin-top : 30px; */
+
+  padding-top : 200px;
+  
+  color : white ;
+
 }

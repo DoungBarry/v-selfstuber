@@ -33,7 +33,7 @@ const Nav = () => {
   return (
     <div className="nav">
       <div className="nav-content">
-        <img src="https://lh3.google.com/u/0/d/1OsF1JBqX0r-PXKDrq7c81pIS7vKW-mQZ=w1830-h1578-iv1" width="100" height="100"
+        <img src="https://lh3.google.com/u/0/d/1p4t7Xqm9uUFPZyWeTJEexy3PQItyiII_=w2000-h1132-iv1" 
           alt=""
           className="nav-logo"></img>
 

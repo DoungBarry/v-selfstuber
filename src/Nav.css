@@ -1,7 +1,7 @@
 .nav   
 {
   /* 這是第一層(最外層) */
-background-color:black;
+/* background-color:black; */
 
   position: fixed;
 
@@ -42,6 +42,7 @@ background-color:black;
 .nav-content {
 display:flex;
 justify-content:space-between;
+
 }
 
 
@@ -50,6 +51,8 @@ position:fixed;
 left:0;
 width: 80px ;
 
+height: 100px;
+width: 150px;;
 
 object-fit: contain;
 padding-left: 10px;
