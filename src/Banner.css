@@ -1,6 +1,6 @@
 .banner {
   position: relative;
-  height: 500px;
+  height: 550px;
   /* width: 400px; */
   object-fit: contain;
   background-repeat: no-repeat;
@@ -12,7 +12,43 @@
   /* margin-top : 30px; */
 
   padding-top : 200px;
-  
+
   color : white ;
 
 }
+
+
+.banner-descript {
+
+font-size: 0.8rem;
+
+/* //文字大小通常建議設定在0.8 rem . 行距間隔 建議設定在 1 rem */
+
+width: 30rem ; 
+
+/* 沒有設定大小的預設是16px 文字大小
+40X16 =640px  */
+
+min-width: 300px;
+
+
+line-height: 1.8;
+
+/* 建議  1.5 -1.8 */ 
+
+padding-top: 1rem ;
+
+height:80px;
+
+}
+
+
+
+.banner-fadebutton {
+
+  
+
+
+}
+
+
