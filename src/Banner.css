@@ -7,14 +7,15 @@
   object-fit: contain;
 }
 
-.banner-content {
+.banner-contents {
   margin-left:20px ;
   /* margin-top : 30px; */
 
   padding-top : 200px;
 
   color : white ;
-
+  
+  height: 150px;
 }
 
 
@@ -32,7 +33,7 @@ width: 30rem ;
 min-width: 300px;
 
 
-line-height: 1.8;
+line-height: 2;
 
 /* 建議  1.5 -1.8 */ 
 
@@ -40,15 +41,57 @@ padding-top: 1rem ;
 
 height:80px;
 
+max-width: 360px;
+
 }
 
 
+.banner-title {
 
-.banner-fadebutton {
+  font-size: 3rem;
+  font-family: 800;
 
+  padding-bottom: 0.5rem;
+  /* 標題的CSS最基本三個必定出現 */
   
+}
 
+.banner--fadeBottom {
+  height:7.4rem;
+/* 漸層效果 參考: https://wcc723.github.io/css/2013/09/24/css-background/*/
+
+  background-image: linear-gradient(
+   180deg,
+   transparent,
+   rgba(37,37,37,0.61),
+   #111
+  )
+}
+
+.banner-button {
+/* Step1 . 先將按鈕的基本款設定: 滑鼠游標 顏色 邊界 外框  */
+ cursor: pointer;
+ color:#fff;
+ outline:none;
+ border: none;
+ /* step2. setting-按鈕: 字型, 寬度 間距 造型  */
+font-weight: 700;
+border-radius: 0.2vw; 
+/* 20%寬度的可是範圍 , note: 會隨著網頁縮放改變 */
+padding-left: 2rem;
+padding-right: 2rem;
+margin-right: 1rem;
+padding-top: 0.5rem;
+padding-bottom: 0.5rem;
+/* step3  you will azaming , when u put in paramater  */
+background-color: rgba(51,51,51,0.5);
 
 }
 
+.banner-button:hover {
 
+color:#000;
+background-color: #e6e6e6;
+transition:all 0.5s;
+
+}
