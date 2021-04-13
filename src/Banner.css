@@ -71,9 +71,11 @@ max-width: 360px;
 .banner-button {
 /* Step1 . 先將按鈕的基本款設定: 滑鼠游標 顏色 邊界 外框  */
  cursor: pointer;
+
  color:#fff;
  outline:none;
  border: none;
+ 
  /* step2. setting-按鈕: 字型, 寬度 間距 造型  */
 font-weight: 700;
 border-radius: 0.2vw; 
@@ -83,6 +85,7 @@ padding-right: 2rem;
 margin-right: 1rem;
 padding-top: 0.5rem;
 padding-bottom: 0.5rem;
+
 /* step3  you will azaming , when u put in paramater  */
 background-color: rgba(51,51,51,0.5);
 

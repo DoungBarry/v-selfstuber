@@ -6,15 +6,26 @@ function Banner() {
 
 
 function truncate (string, n ) {
-   return string?.length > n ? string.substr(0, n - 1) + '...' : string ;
+   return string?.length > n ? 
+   string.substr(0, n) + '...' : string ;
 }
 
+// '... ' :  表示任何字串代入 , 
 
+//str.substr(start[, length])   
+//var aString = 'Mozilla';
+// console.log(aString.substr(0, 1));   // 'M'
+// console.log(aString.substr(1, 0));   // ''
+// console.log(aString.substr(-1, 1));  // 'a'
+// console.log(aString.substr(1, -1));  // ''
+// console.log(aString.substr(-3));     // 'lla'
+// console.log(aString.substr(1));      // 'ozilla'
+// console.log(aString.substr(-20, 2)); // 'Mo'
+// console.log(aString.substr(20, 2));  // ''
 
 
     {/* 嘗試不同用法：css 直接在html 標籤上嵌入
      ＣＳＳ名稱寫法會有所不同:blackground-size => blackgroundSize */}
-
 
   return (
    <header className="banner" 
@@ -42,7 +53,6 @@ function truncate (string, n ) {
 
 
 
-
 {truncate(
 `初學開發者碰到文字排版總是非常頭疼 , 
 這關係到RWD , 看起來是不是乾淨 .簡潔 , 舒服 , 大小適當
@@ -51,11 +61,12 @@ function truncate (string, n ) {
 因為rem 和 ％ 很像都是相對參照Root 去改變大小 . 當文字微調時只要改變Root 就可以了 . 
 名稱為 ： Root + em =1 em 當父（上一層）沒有設定大小的預設是16px
 文字大小通常建議設定在0.8 rem .
-行距間隔 建議設定在 1 rem` , 130) } 
+行距間隔 建議設定在 1 rem` , 50) } 
 
 {/* fruncate { 字串 , 最高150個文字 }: going to ahead and say 15o is my character limit  */}
 </h1>
 </div>
+      
         <div className="banner--fadeBottom"></div>
         
         {/* 漸層區域 ==> hover  */}
