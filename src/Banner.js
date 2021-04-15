@@ -16,23 +16,18 @@ function Banner() {
 
        setMovie (
         request.data.results[
-          Math.floor(Math.random()*request.data.results.length-1)
+          Math.floor(Math.random() * request.data.results.length-1)
         ]
       );
-
          return request;
       }
-
-
   fetchDate () ;
-
     }, [])
 
 console.log(movie)
 
 function truncate (string, n ) {
-   return string?.length > n ? 
-   string.substr(0, n) + '...' : string ;
+   return string?.length > n ? string.substr(0, n) + '...' : string ;
 }
 
 // '... ' :  表示任何字串代入 , 
@@ -55,14 +50,13 @@ function truncate (string, n ) {
   return (
    <header className="banner" 
    style={{
-    blackgroundSize: "cover", 
+    backgroundSize: "cover", 
     // cover主要用於背景圖小於所在的內容，而背景圖又不適合使用repeat，此時就可以採用cover的方式，使背景圖放大至內容的大小，但此方法容易使背景圖因放大而失真。
     //https://www.kip.com.tw/modules/news/article.php?storyid=35
 
     // backgroundImage: `url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Black_flag.svg/1200px-Black_flag.svg.png")`,
     
-    backgroundImage: `url("https://image.tmdb.org/t/p/origina/${movie?.backdrop_path}")`,
-
+    backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
 
       backgroundPosition: "center center",
         // backgroundImage: `url("https://lh3.google.com/u/0/d/1cxDRBOTttqAt86kvQ8Sb7vaQEWr_v1wh=w2880-h1304-iv1")`,
